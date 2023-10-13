@@ -12,8 +12,8 @@ else
 fi
 
 if [ "$3" == "" ]; then
-  echo "Random seed is not specified, default is 2023"
-  random_seed=2023
+  echo "Random seed is not specified, default is 2021"
+  random_seed=2021
 else
   echo "$3 is given as random seed"
   random_seed=$3
