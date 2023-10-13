@@ -1,0 +1,10 @@
+main_worker: 'run_task_free'
+trainer: 'pretrain'
+test_only: False
+retrieval: False
+modality_gap: False
+modality_gap_visualize: False
+frames_visualize: False
+visualize: False
+visualizer: ''
+throughput: False
