@@ -1,7 +1,9 @@
 # FLAVA
 
-### **[Lifelong Audio-video Masked Autoencoder with Forget-robust Localized Alignments](https://arxiv.org/abs/2310.08204)**  
-Jaewoo Lee*, [Jaehong Yoon*](https://jaehong31.github.io/), [Wonjae Kim](https://wonjae.kim/), [Yunji Kim](https://github.com/YunjiKim), [Sung Ju Hwang](http://www.sungjuhwang.com/)   
+### **Lifelong Audio-video Masked Autoencoder with Forget-robust Localized Alignments**  
+* Authors: Jaewoo Lee*, [Jaehong Yoon*](https://jaehong31.github.io/), [Wonjae Kim](https://wonjae.kim/), [Yunji Kim](https://github.com/YunjiKim), [Sung Ju Hwang](http://www.sungjuhwang.com/)
+* [Paper](https://arxiv.org/abs/2310.08204)
+* [Project Page](https://g-jwlee.github.io/FLAVA/)
 
 ## Introduction
 
