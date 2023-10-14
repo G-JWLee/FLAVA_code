@@ -67,8 +67,8 @@ optim.args.lr=1e-4 \
 optim.args.betas=[0.95,0.999] \
 optim.args.weight_decay=5e-7 \
 optim.epochs=10 \
-optim.batch_size=36 \
-optim.per_gpu_batchsize=9 \
+optim.batch_size=48 \
+optim.per_gpu_batchsize=12 \
 optim.layer_decay=1.0 \
 optim.use_lr_scheduler=False \
 
