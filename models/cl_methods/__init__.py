@@ -8,3 +8,4 @@ from .flava import FLAVA
 from .finetune import Finetune
 from .finetune_head import Finetune_head
 from .finetune_submodule import Finetune_submodule
+from .ours_visualize import Ours_Visualize

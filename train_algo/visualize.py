@@ -170,6 +170,7 @@ def attention_submodule_visualize(loader, model, args, category_name, writer=Non
 def attention_submodule_visualize_spurious(loader, model, args, category_name, writer=None):
     """
     Visualize attention map based on audio-video matching submodule.
+    Together with current attention map, using the past data, we visualize attention map by past modality pair.
     """
     loader.batch_sampler.set_epoch(epoch=0)
     # switch to eval mode
@@ -329,6 +330,7 @@ def attention_submodule_visualize_spurious(loader, model, args, category_name, w
 def attention_submodule_visualize_spurious_key_query_sim(loader, model, args, category_name, writer=None):
     """
     Visualize attention map based on audio-video matching submodule.
+    Plus, we visualize the selected audio-video patches following our approach.
     """
     loader.batch_sampler.set_epoch(epoch=0)
     # switch to eval mode
@@ -518,11 +520,8 @@ def attention_submodule_visualize_spurious_key_query_sim(loader, model, args, ca
                 video_pruned_grid = torchvision.utils.make_grid(video_pruned)
 
                 writer.add_image(f'{category_name}/{filename}_attention', cams_grid)
-                # writer.add_image(f'{category_name}/{filename}_heat_map', heat_maps_grid)
                 writer.add_image(f'{category_name}/{filename}_uni_attention', uni_cams_grid)
-                # writer.add_image(f'{category_name}/{filename}_uni_spu_heat_map', uni_heat_maps_grid)
                 writer.add_image(f'{category_name}/{filename}_uni_spu_attention', uni_spu_cams_grid)
-                # writer.add_image(f'{category_name}/{filename}_uni_spu_heat_map', uni_spu_heat_maps_grid)
                 writer.add_image(f'{category_name}/{filename}_images', images_grid)
                 writer.add_image(f'{category_name}/{filename}_core_images', core_images_grid)
                 writer.add_image(f'{category_name}/{filename}_prune_images', video_pruned_grid)
